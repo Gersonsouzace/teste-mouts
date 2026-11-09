@@ -1,6 +1,5 @@
 # ServeRest - Automação com Cypress
 
-
 Testes automatizados **E2E (frontend)** e de **API** da aplicação [ServeRest](https://serverest.dev), feitos com Cypress, com relatório **Allure** e pipeline no **GitHub Actions**.
 
 | Alvo     | URL                          |
