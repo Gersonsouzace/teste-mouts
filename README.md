@@ -1,6 +1,5 @@
 # ServeRest - Automação com Cypress
 
-[![CI - Cypress Tests](https://github.com/<seu-usuario>/<seu-repo>/actions/workflows/ci.yml/badge.svg)](https://github.com/<seu-usuario>/<seu-repo>/actions/workflows/ci.yml)
 
 Testes automatizados **E2E (frontend)** e de **API** da aplicação [ServeRest](https://serverest.dev), feitos com Cypress, com relatório **Allure** e pipeline no **GitHub Actions**.
 
