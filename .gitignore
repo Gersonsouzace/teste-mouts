@@ -1,0 +1,11 @@
+node_modules/
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+allure-results/
+allure-report/
+cypress.env.json
+.env
+*.log
+.DS_Store
+allure-history.jsonl

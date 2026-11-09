@@ -1,0 +1,49 @@
+{
+  "name": "serverest-cypress-automation",
+  "version": "1.0.0",
+  "description": "Testes automatizados E2E (frontend) e de API do ServeRest com Cypress",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "cy:open": "cypress open",
+    "test": "cypress run",
+    "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
+    "test:e2e": "cypress run --spec \"cypress/e2e/frontend/**/*.cy.js\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "allure:clean": "rimraf allure-results allure-report",
+    "allure:generate": "allure generate ./allure-results",
+    "allure:open": "allure open ./allure-report",
+    "test:report": "run-s --continue-on-error allure:clean test allure:generate",
+    "test:chrome": "cypress run --browser chrome"
+  },
+  "keywords": [
+    "cypress",
+    "serverest",
+    "e2e",
+    "api",
+    "allure"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@faker-js/faker": "^10.6.0",
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1",
+    "allure": "^3.33.0",
+    "allure-cypress": "^3.14.0",
+    "allure-js-commons": "^3.14.0",
+    "cypress": "^16.2.1",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-cypress": "^7.0.4",
+    "globals": "^17.14.0",
+    "npm-run-all2": "^8.0.4",
+    "prettier": "^3.9.10",
+    "rimraf": "^6.1.4"
+  }
+}
