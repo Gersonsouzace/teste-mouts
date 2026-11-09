@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Resposta de erro com mensagem",
+  "type": "object",
+  "required": ["message"],
+  "properties": {
+    "message": { "type": "string", "minLength": 1 }
+  }
+}

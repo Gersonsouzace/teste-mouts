@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Produto (GET /produtos/{_id})",
+  "type": "object",
+  "required": ["nome", "preco", "descricao", "quantidade", "_id"],
+  "additionalProperties": false,
+  "properties": {
+    "nome": { "type": "string", "minLength": 1 },
+    "preco": { "type": "integer", "minimum": 1 },
+    "descricao": { "type": "string", "minLength": 1 },
+    "quantidade": { "type": "integer", "minimum": 0 },
+    "_id": { "type": "string", "pattern": "^[A-Za-z0-9]{16}$" }
+  }
+}
